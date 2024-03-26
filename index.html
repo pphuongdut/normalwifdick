@@ -18,24 +18,33 @@
 
   <body>
     <div
-      class="section-container w-screen h-screen relative flex flex-col items-center justify-center p-10 overflow-hidden"
+      class="min-w-[720px] section-container w-screen h-screen relative flex flex-col items-center justify-center lg:p-10 overflow-hidden"
     >
-      <div class="relative h-3/5 w-full flex flex-col justify-end">
+      <div class="relative h-3/5 w-full flex flex-col justify-end items-center">
         <img
-          class="w-full object-contain max-h-full"
+          class="w-full object-contain max-h-full z-10 min-w-[720px]"
           src="./assets/img/Khung.png"
-          alt=""
-          srcset=""
-        />
-        <img
-          class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[30%] w-[10%] z-0"
-          src="./assets/img/normie.gif"
           alt=""
           srcset=""
         />
 
         <div
-          class="flex justify-between gap-10 absolute bottom-11 w-full px-[28%]"
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[50px] w-[120px] z-0"
+        >
+          <img
+            class="w-full h-full"
+            src="./assets/img/normie.gif"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute top-[90px] left-[46px] flex gap-4">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between gap-10 absolute bottom-11 w-full px-[10%] md:px-[28%] z-10"
         >
           <a href="http://" target="_blank">
             <img src="./assets/img/tele.png" class="h-7" alt="" srcset="" />
@@ -58,5 +67,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
